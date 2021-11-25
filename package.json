@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/matssom/svelte-cbl/issues"
   },
-  "homepage": "https://github.com/matssom/svelte-cbl#readme"
+  "homepage": "https://github.com/matssom/svelte-cbl#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3"
+  }
 }
