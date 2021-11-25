@@ -1,0 +1,19 @@
+{
+  "name": "svelte-cbl",
+  "version": "1.0.0",
+  "description": "Svelte component library builder",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matssom/svelte-cbl.git"
+  },
+  "author": "Mats Sommervold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matssom/svelte-cbl/issues"
+  },
+  "homepage": "https://github.com/matssom/svelte-cbl#readme"
+}
