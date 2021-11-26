@@ -4,8 +4,12 @@
   "description": "Svelte component library builder",
   "main": "./src/index.js",
   "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
     "test": "jest test",
-    "test:watch" : "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -21,6 +25,13 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@rollup/plugin-node-resolve": "^13.0.6",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/addon-svelte-csf": "^1.1.0",
+    "@storybook/builder-webpack5": "^6.3.12",
+    "@storybook/manager-webpack5": "^6.3.12",
+    "@storybook/svelte": "^6.3.12",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/svelte": "^3.0.3",
     "babel-jest": "^27.3.1",
