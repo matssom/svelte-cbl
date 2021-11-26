@@ -1,27 +1,8 @@
 <script>
+    import { size } from '../../common/translations'
     export let gap = 'small';
-    let gapSize = ''
 
-    $: switch (gap) {
-        case 'huge':
-            gapSize = '--stack-gap:16rem;'
-            break;
-        case 'large':
-            gapSize = '--stack-gap:11rem;'
-            break;
-        case 'medium':
-            gapSize = '--stack-gap:6rem;'
-            break;
-        case 'small':
-            gapSize = '--stack-gap:3rem;'
-            break;
-        case 'tiny':
-            gapSize = '--stack-gap:1rem;'
-            break;
-        default:
-            gapSize = `--stack-gap:${gap};`;
-            break;
-    }
+    $: gapSize = size(gap, (gap) => `--stack-gap-size:${gap};`)
 </script>
 
 <div class="stack" style={gapSize}>
@@ -32,6 +13,6 @@
     .stack {
         display: grid;
         grid-template-columns: 1fr;
-        gap: var(--stack-gap);
+        gap: var(--stack-gap-size);
     }
 </style>

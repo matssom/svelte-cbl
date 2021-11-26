@@ -1,9 +1,9 @@
-import StackView from './Stack.view.svelte';
+import FlowView from './Flow.view.svelte';
 import GlobalDecorator from '../../global/GlobalDecorator.svelte'
 
 export default {
-  	title: 'layout/Stack',
-  	component: StackView,
+  	title: 'layout/Flow',
+  	component: FlowView,
 	argTypes: {
 		gap: {
 			options: ['tiny', 'small', 'medium', 'large', 'huge'],
@@ -23,8 +23,8 @@ export default {
 }
 
 const Template = (args) => ({ 
-	component: StackView, 
+	component: FlowView, 
 	props: args
 });
 
-export const Stack = Template.bind({});
+export const Flow = Template.bind({});
